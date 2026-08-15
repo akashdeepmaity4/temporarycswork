@@ -283,3 +283,23 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+OUTPUT-
+```
+Enter the following values for rectangle:
+Length: Integer Value: 50
+Breadth: Integer Value: 30
+Area of the rectangle is: 1500
+```
+Q- What possible output(s) will be displayed on screen on the time of executionof the following code?
+```python
+import random
+DATA = [120,130,240,350,460,570]
+X=random.randint(1,3)
+Y=random.randint(2,4)
+for I in range(X):
+    print(DATA[I],end=" #")
+```
+OUTPUT- 
+```text
+120 #130 #
+```
