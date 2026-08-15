@@ -303,3 +303,218 @@ OUTPUT-
 ```text
 120 #130 #
 ```
+Q- What will be the output of the given code snippet?
+```python
+def div(lst,n):
+    for i in range(0,n):
+        if lst[i]%5==0:
+            lst[i]+=5
+        else:
+            lst[i]=lst[i]//2
+```
+OUTPUT-
+```
+```
+Q- Predict the output of the following code snippet.
+```python
+value = 50
+def display (N):
+    global value
+    value = 25
+    if N%7 == 0:
+        value = value + N
+    else:
+        value = value - N
+print(value, end='#')
+display(20)
+print(value)
+```
+OUTPUT-
+```
+50#5
+```
+Q- Consider the code given below and identify which message will not be printed.
+```python
+def prog(name):
+    for x in name:
+        if x.isalpha():
+            print("Alphabets")
+        elif x.isdigit():
+            print("Digit")
+        elif x.isupper():
+            print("upper")
+        else:
+            print("All the best")
+prog("computerscience123@ymail.com")
+```
+OUTPUT-
+```
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Digit
+Digit
+Digit
+All the best
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+Alphabets
+All the best
+Alphabets
+Alphabets
+Alphabets
+```
+Ans-
+```text
+upper
+```
+Q- What Is the correct output of the following code?
+```python
+def makenew(mystr):
+    newstr = ""
+    count = 0
+    for x in mystr:
+        if count > 1:
+            newstr = newstr + str(1)
+        else:
+            if x.islower():
+                newstr = newstr + x.upper()
+            else:
+                newstr = newstr + x
+        count += 1
+    newstr = newstr + mystr[:1]
+    print("The new string is:", newstr)
+makenew("sTuDeNT")
+
+```
+OUTPUT-
+```
+ST11111s
+```
+Q- Write a function in Python convert() to replace elements having even values With its half and elements having odd values with twice its value in a list.
+
+Ans-
+```python
+def convert(l1):
+    for i in range(0, len(l1)):
+        if l1[i] % 2 == 0:
+            l1[i] = l1[i] // 2
+        else:
+            l1[i] = l1[i] * 2
+    print(l1)
+
+l1 = [3, 4, 5, 16, 9]
+convert(l1)
+```
+OUTPUT-
+```text
+[6, 2, 10, 8, 18]
+```
+Q- Predict the output of the following path in code
+```python
+def product(L1, L2):
+    p = 0
+    for i in L1:
+        for j in L2:
+            p = p + i * j
+    return p
+
+LIST = [1, 2, 3, 4, 5, 6]
+l1 = []
+l2 = []
+
+for i in LIST:
+    if (i % 2 == 0):
+        l1.append(i)
+    else:
+        l2.append(i)
+
+print(product(l1, l2))
+```
+OUTPUT-
+```text
+108
+```
+Q- Read the output of the code given below.
+
+```python
+def makenew(mystr):
+    newstr = ""
+    count = 0
+    for i in mystr:
+        if count % 2 != 0:
+            newstr = newstr + str(count)
+        else:
+            if i.lower():
+                newstr = newstr + i.upper()
+            else:
+                newstr = newstr + i
+        count += 1
+    print(newstr)
+
+makenew("No@1")
+```
+OUTPUT-
+```
+N1@3
+```
+Q- What will be the output of the following code?
+```python
+A = 0
+B = 6
+print('One')
+try:
+    print('Two')
+    X = 8 / A
+    print('Three')
+except ZeroDivisionError:
+    print(B * 2)
+    print('Four')
+except:
+    print(b * 3)
+    print('Five')
+```
+OUTPUT-
+```
+One
+Two
+12
+Four
+```
+Q- Observe the following code and pay its output for (i),(ii) and (iii).
+```python
+def process_data(data):
+    try:
+        value = int(data)
+        if value > 100:
+            print("Value is greater than 100.")
+        else:
+            print("Value is not greater than 100.")
+    except ValueError:
+        print("Invalid input: Not an integer.")
+    finally:
+        print("Data processing complete.")
+process_data(150)
+process_data("abc")
+process_data(50)
+
+```
+OUTPUT-
+```text
+Value is greater than 100.
+Data processing complete.
+```
