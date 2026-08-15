@@ -495,7 +495,7 @@ Two
 12
 Four
 ```
-Q- Observe the following code and pay its output for (i),(ii) and (iii).
+Q- Observe the following code and predict its output for (i),(ii) and (iii).
 ```python
 def process_data(data):
     try:
