@@ -1,6 +1,7 @@
 # Codes for Class 12th 
 
-This is a temporary repository i made to store a small school project.
+This is a repository i made to store a small school project.
+
 
 ![alt](https://shields.io/badge/Class-12-green)
 ![alt](https://shields.io/badge/Python-3.14-blue)
